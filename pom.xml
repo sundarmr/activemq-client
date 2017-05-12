@@ -52,4 +52,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<scm>
+		<url>https://github.com/sundarmr/activemq-client.git</url>
+	</scm>
 </project>
