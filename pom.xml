@@ -6,12 +6,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<distributionManagement>
     <snapshotRepository>
-      <id>snapshots-repo</id>
+      <id>myartifactory-snapshots</id>
       <name>Snapshots Repo</name>
       <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
     <repository>
-      <id>releases-repo</id>
+      <id>myartifactory</id>
       <name>Releases Repo</name>
       <url>http://localhost:8081/artifactory/libs-release-local</url>
     </repository>
