@@ -73,24 +73,12 @@
 	<build>
 	<plugins>
 		 <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.3</version>
-			 <configuration>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<updateBranchVersions>true</updateBranchVersions>
-					<updateWorkingCopyVersions>true</updateWorkingCopyVersions>
-					<updateDependencies>true</updateDependencies>
-					<pushChanges>true</pushChanges>
-					<remoteTagging>false</remoteTagging>
-					<suppressCommitBeforeBranch>false</suppressCommitBeforeBranch>
-				</configuration>
-      </plugin>
-		<plugin>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.9.4</version>
-                
-            </plugin>
-		</plugins>
+            <groupId>external.atlassian.jgitflow</groupId>
+            <artifactId>jgitflow-maven-plugin</artifactId>
+            <version>1.0-m5.1</version>
+            <configuration>
+                <!-- see goals wiki page for configuration options -->
+            </configuration>
+        </plugin>
 	</build>
 </project>
