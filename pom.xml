@@ -54,5 +54,7 @@
 	</dependencies>
 	<scm>
 		<url>https://github.com/sundarmr/activemq-client.git</url>
+		<connection>scm:git:git://github.com:sundarmr/activemq-client.git</connection>
+		<developerConnection>scm:git:git://github.com:sundarmr/activemq-client.git</developerConnection>
 	</scm>
 </project>
