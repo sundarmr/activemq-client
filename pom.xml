@@ -68,7 +68,7 @@
 		<url>https://github.com/sundarmr/activemq-client.git</url>
 		<connection>scm:git:https://github.com/sundarmr/activemq-client.git</connection>
 
-	  <tag>releasebranch</tag>
+	  <tag>my-branch-1.2</tag>
   </scm>
 	<build>
 	<plugins>
