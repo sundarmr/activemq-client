@@ -76,6 +76,15 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.3</version>
+			 <configuration>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<updateBranchVersions>true</updateBranchVersions>
+					<updateWorkingCopyVersions>true</updateWorkingCopyVersions>
+					<updateDependencies>true</updateDependencies>
+					<pushChanges>true</pushChanges>
+					<remoteTagging>false</remoteTagging>
+					<suppressCommitBeforeBranch>false</suppressCommitBeforeBranch>
+				</configuration>
       </plugin>
 		<plugin>
                 <artifactId>maven-scm-plugin</artifactId>
