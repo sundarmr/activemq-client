@@ -77,8 +77,16 @@
             <artifactId>jgitflow-maven-plugin</artifactId>
             <version>1.0-m5.1</version>
             <configuration>
+		    <pushReleases>true</pushReleases>
+          <keepBranch>false</keepBranch>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <noTag>true</noTag>
+          <allowUntracked>true</allowUntracked>
+          <pullDevelop>true</pullDevelop>
+          <pullMaster>true</pullMaster>
+          <allowSnapshots>true</allowSnapshots>
             <flowInitContext>
-         <masterBranchName>frankenstein</masterBranchName>
+         <masterBranchName>master</masterBranchName>
          <developBranchName>development</developBranchName>
          <featureBranchPrefix>feature-</featureBranchPrefix>
          <releaseBranchPrefix>release-</releaseBranchPrefix>
