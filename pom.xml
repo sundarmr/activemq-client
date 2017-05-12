@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.elavon.poc</groupId>
 	<artifactId>activemq-client</artifactId>
-	<version>6.19-SNAPSHOT</version>
+	<version>6.18-SNAPSHOT</version>
 	<distributionManagement>
     <snapshotRepository>
       <id>myartifactory-snapshots</id>
