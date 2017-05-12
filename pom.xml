@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.elavon.poc</groupId>
 	<artifactId>activemq-client</artifactId>
-	<version>6.4-SNAPSHOT</version>
+	<version>6.3</version>
 	<distributionManagement>
     <snapshotRepository>
       <id>myartifactory-snapshots</id>
@@ -68,7 +68,7 @@
 		<url>https://github.com/sundarmr/activemq-client.git</url>
 		<connection>scm:git:https://github.com/sundarmr/activemq-client.git</connection>
 
-	  <tag>my-branch-1.1</tag>
+	  <tag>activemq-client-6.3</tag>
   </scm>
 	<build>
 	<plugins>
