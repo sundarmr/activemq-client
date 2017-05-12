@@ -66,23 +66,12 @@
         <version>2.5.3</version>
       </plugin>
 		<plugin>
-	<groupId>external.atlassian.jgitflow</groupId>
-	<artifactId>jgitflow-maven-plugin</artifactId>
-	<configuration>
-		<pushFeatures>true</pushFeatures>
-		<pushHotfixes>true</pushHotfixes>
-		<pushReleases>true</pushReleases>
-		<enableSshAgent>true</enableSshAgent>
-		<flowInitContext>
-			<masterBranchName>master</masterBranchName>
-			<developBranchName>development</developBranchName>
-			<featureBranchPrefix>feature-</featureBranchPrefix>
-			<releaseBranchPrefix>release-</releaseBranchPrefix>
-			<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
-			<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
-		</flowInitContext>
-	</configuration>
-</plugin>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.9.4</version>
+                <configuration>
+                    <tag>${project.artifactId}-${project.version}</tag>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 </project>
