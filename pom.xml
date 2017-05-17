@@ -74,11 +74,11 @@
 	<build>
 		<plugins>
 			<plugin>
-				<dependency>
+				
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-release-plugin</artifactId>
 					<version>2.5.1</version>
-				</dependency>
+				
 			</plugin>
 		</plugins>
 	</build>
