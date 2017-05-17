@@ -1,20 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.elavon.poc</groupId>
 	<artifactId>activemq-client</artifactId>
 	<version>6.19-SNAPSHOT</version>
 	<distributionManagement>
-    <snapshotRepository>
-      <id>myartifactory-snapshots</id>
-      <name>Snapshots Repo</name>
-      <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
-    <repository>
-      <id>myartifactory</id>
-      <name>Releases Repo</name>
-      <url>http://localhost:8081/artifactory/libs-release-local</url>
-    </repository>
-  </distributionManagement>
+		<snapshotRepository>
+			<id>myartifactory-snapshots</id>
+			<name>Snapshots Repo</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+		<repository>
+			<id>myartifactory</id>
+			<name>Releases Repo</name>
+			<url>http://localhost:8081/artifactory/libs-release-local</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 
 		<dependency>
@@ -63,37 +64,22 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-		<scm>
+
+	<scm>
 		<url>https://github.com/sundarmr/activemq-client.git</url>
 		<connection>scm:git:https://github.com/sundarmr/activemq-client.git</connection>
 
-	  <tag>mybranch</tag>
-  </scm>
+		<tag>mybranch</tag>
+	</scm>
 	<build>
-	<plugins>
-		 <plugin>
-            <groupId>external.atlassian.jgitflow</groupId>
-            <artifactId>jgitflow-maven-plugin</artifactId>
-            <version>1.0-m5.1</version>
-            <configuration>
-		    <pushReleases>true</pushReleases>
-          <keepBranch>false</keepBranch>
-          <autoVersionSubmodules>true</autoVersionSubmodules>
-          <noTag>true</noTag>
-          <allowUntracked>true</allowUntracked>
-          <pullDevelop>true</pullDevelop>
-          <pullMaster>true</pullMaster>
-          <allowSnapshots>true</allowSnapshots>
-            <flowInitContext>
-         <masterBranchName>master</masterBranchName>
-         <developBranchName>development</developBranchName>
-         <featureBranchPrefix>feature-</featureBranchPrefix>
-         <releaseBranchPrefix>release-</releaseBranchPrefix>
-         <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
-         <versionTagPrefix>blither-</versionTagPrefix>
-       </flowInitContext>
-            </configuration>
-        </plugin>
+		<plugins>
+			<plugin>
+				<dependency>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5.1</version>
+				</dependency>
+			</plugin>
+		</plugins>
 	</build>
 </project>
