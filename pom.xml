@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.elavon.poc</groupId>
 	<artifactId>activemq-client</artifactId>
-	<version>6.19-SNAPSHOT</version>
+	<version>6.20-SNAPSHOT</version>
 	<distributionManagement>
 		<snapshotRepository>
 			<id>myartifactory-snapshots</id>
@@ -69,7 +68,7 @@
 		<url>https://github.com/sundarmr/activemq-client.git</url>
 		<connection>scm:git:https://github.com/sundarmr/activemq-client.git</connection>
 
-		<tag>mybranch</tag>
+		<tag>my-branch</tag>
 	</scm>
 	<build>
 		<plugins>
